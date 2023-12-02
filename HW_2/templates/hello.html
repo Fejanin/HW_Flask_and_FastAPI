@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Ввод данных
+{% endblock %}
+
+{% block content %}
+<form action="/hello/{{ name }}/{{ mail }}/" method="post">
+Ну привет {{ name }}!
+<br>
+Почта: {{ mail }}
+<br>
+<button type="submit">Выйти</button>
+</form>
+
+{% endblock %}
