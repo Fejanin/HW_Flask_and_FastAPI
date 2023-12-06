@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Ввод данных
+{% endblock %}
+
+{% block content %}
+<form action="/" method="post">
+    <div>Введите имя: <input type="text" name="name" placeholder="Имя"></div>
+    <div>Введите почту: <input type="text" name="mail" placeholder="почта"></div>
+    <button type="submit">Отправить</button>
+</form>
+{% endblock %}
