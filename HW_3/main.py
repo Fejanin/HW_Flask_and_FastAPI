@@ -13,6 +13,7 @@ csrf = CSRFProtect(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
+@csrf.exempt
 def login():
     form = LoginForm()
     if request.method == 'POST' and form.validate():
