@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>№ п/п</th>
+            <th>id</th>
+            <th>title</th>
+            <th>description</th>
+            <th>status</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{ i }}</td>
+            <td>{{ data[i].id }}</td>
+            <td>{{ data[i].title }}</td>
+            <td>{{ data[i].description }}</td>
+            <td>{{ data[i].status }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
